@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PULSEWAVE Festival - Tickets</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="hoofdbalk">
+        <div class="logo">PULSEWAVE<span>.NL</span></div>
+        <nav class="navigatie">
+            <a href="index.html">Home</a>
+            <div class="dropdown">
+                <button class="dropknop">Programma ▼</button>
+                <div class="dropdown-inhoud">
+                    <a href="lineup.html">Line-up</a>
+                    <a href="timetable.html">Timetable</a>
+                </div>
+            </div>
+            <a href="tickets.html" class="actief">Tickets</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1 class="pagina-titel">Bestel je Tickets</h1>
+        <p class="pagina-subtitel">Vul je gegevens in en ontvang direct je Pulsewave e-tickets in je mailbox.</p>
+
+        <!-- Formulier met 5 velden en 4 verschillende soorten (text, email, select, number, checkbox) -->
+        <form class="ticket-formulier" action="#" method="post">
+            
+            <!-- Veld 1: Tekst -->
+            <div class="form-groep">
+                <label for="naam">Volledige naam:</label>
+                <input type="text" id="naam" name="naam" placeholder="Bijv. Rodi Dizjwar" required>
+            </div>
+
+            <!-- Veld 2: E-mail -->
+            <div class="form-groep">
+                <label for="email">E-mailadres:</label>
+                <input type="email" id="email" name="email" placeholder="naam@voorbeeld.nl" required>
+            </div>
+
+            <!-- Veld 3: Keuzelijst (<select>) -->
+            <div class="form-groep">
+                <label for="ticketsoort">Kies je soort ticket:</label>
+                <select id="ticketsoort" name="ticketsoort">
+                    <option value="dag-za">Dagticket Zaterdag (€ 39,50)</option>
+                    <option value="dag-zo">Dagticket Zondag (€ 39,50)</option>
+                    <option value="weekend">Weekendticket Za + Zo (€ 69,00)</option>
+                    <option value="vip">VIP Wave Deck Ticket (€ 115,00)</option>
+                </select>
+            </div>
+
+            <!-- Veld 4: Getal (number) -->
+            <div class="form-groep">
+                <label for="aantal">Aantal tickets (1 t/m 10):</label>
+                <input type="number" id="aantal" name="aantal" min="1" max="10" value="1" required>
+            </div>
+
+            <!-- Veld 5: Checkbox -->
+            <div class="form-groep checkbox-groep">
+                <input type="checkbox" id="voorwaarden" name="voorwaarden" required>
+                <label for="voorwaarden">Ik ga akkoord met de festivalregels (18+ legitimatie verplicht).</label>
+            </div>
+
+            <!-- Verzendknop -->
+            <button type="submit" class="actie-knop">Tickets Bestellen</button>
+
+        </form>
+    </main>
+
+    <footer class="voettekst">
+        <p>&copy; 2027 PULSEWAVE Festival - Gemaakt door [Naam A], [Naam B] & [Naam C] (Periode 1)</p>
+    </footer>
+
+</body>
+</html>

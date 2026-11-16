@@ -1,0 +1,8 @@
+[ 1. HOME (index.html) ]
+                 /           |            \
+                /            |             \
+   [ 2. LINE-UP ]    [ 3. TIMETABLE ]    [ 4. TICKETS ]
+   (lineup.html)     (timetable.html)    (tickets.html)
+         \                   /
+          \                 /
+      (Zitten samen in Dropdown: "Programma ▼")

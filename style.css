@@ -1,0 +1,327 @@
+/* =========================================
+   GEZAMENLIJKE HUISSTIJL - Samen
+   ========================================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0d1b2a;
+    color: #f8f9fa;
+    line-height: 1.6;
+}
+
+/* Header & Navigatie */
+.hoofdbalk {
+    background-color: #1b263b;
+    border-bottom: 3px solid #ff6b6b;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #ff6b6b;
+}
+
+.navigatie {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navigatie a, .dropknop {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navigatie a:hover, .dropknop:hover, .actief {
+    background-color: #ff6b6b;
+    color: #0d1b2a;
+}
+
+/* Dropdown in de nav */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-inhoud {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1b263b;
+    border: 1px solid #ff6b6b;
+    min-width: 160px;
+    border-radius: 5px;
+}
+
+.dropdown-inhoud a {
+    display: block;
+    padding: 10px 15px;
+}
+
+.dropdown:hover .dropdown-inhoud {
+    display: block;
+}
+
+/* Algemene container en knoppen */
+.container {
+    width: 85%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.pagina-titel, .sectie-titel {
+    font-size: 32px;
+    color: #ffe66d;
+    margin-bottom: 10px;
+}
+
+.pagina-subtitel {
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.actie-knop {
+    background-color: #ff6b6b;
+    color: #0d1b2a;
+    border: none;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.actie-knop:hover {
+    background-color: #ffe66d;
+}
+
+.actie-knop.geklikt {
+    background-color: #4ecdc4;
+    color: #0d1b2a;
+}
+
+.voettekst {
+    background-color: #1b263b;
+    text-align: center;
+    padding: 20px;
+    margin-top: 60px;
+    border-top: 2px solid #415a77;
+    color: #cbd5e1;
+}
+
+/* =========================================
+   HOMEPAGE (Hero & 3 Teasers) - Samen
+   ========================================= */
+.hero {
+    background: linear-gradient(135deg, #1b263b, #415a77);
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 3px solid #4ecdc4;
+}
+
+.datum-badge {
+    display: inline-block;
+    background-color: #4ecdc4;
+    color: #0d1b2a;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.slogan {
+    font-size: 20px;
+    color: #ffe66d;
+    margin-bottom: 30px;
+}
+
+.teaser-rij {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.teaser-blok {
+    background-color: #1b263b;
+    border: 1px solid #415a77;
+    border-radius: 8px;
+    padding: 25px;
+    width: 32%;
+}
+
+.teaser-blok h3 {
+    color: #4ecdc4;
+    margin-bottom: 10px;
+}
+
+.teaser-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ff6b6b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* =========================================
+   KAARTENPAGINA - Student A
+   ========================================= */
+.kaarten-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.kaart {
+    background-color: #1b263b;
+    border: 1px solid #415a77;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 31%;
+}
+
+.kaart img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.kaart-tekst {
+    padding: 20px;
+}
+
+.podium-label {
+    display: inline-block;
+    background-color: #415a77;
+    color: #ffe66d;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* =========================================
+   TABELPAGINA - Student B
+   ========================================= */
+.festival-tabel {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1b263b;
+}
+
+.festival-tabel thead {
+    background-color: #ff6b6b;
+    color: #0d1b2a;
+}
+
+.festival-tabel th, .festival-tabel td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #415a77;
+}
+
+.festival-tabel tbody tr:hover {
+    background-color: #253552;
+}
+
+/* =========================================
+   FORMULIERPAGINA - Student C
+   ========================================= */
+.ticket-formulier {
+    background-color: #1b263b;
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid #415a77;
+    max-width: 600px;
+}
+
+.form-groep {
+    margin-bottom: 20px;
+}
+
+.form-groep label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #4ecdc4;
+}
+
+.form-groep input, .form-groep select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #415a77;
+    background-color: #0d1b2a;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.checkbox-groep {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-groep input {
+    width: auto;
+}
+
+.checkbox-groep label {
+    margin-bottom: 0;
+    color: #f8f9fa;
+    font-weight: normal;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN (Telefoon <= 768px)
+   ========================================= */
+@media (max-width: 768px) {
+    .hoofdbalk {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .teaser-rij, .kaarten-grid {
+        flex-direction: column;
+    }
+
+    .teaser-blok, .kaart {
+        width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
