@@ -4,21 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PULSEWAVE Festival 2027 - Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+
     <header class="hoofdbalk">
-        <div class="logo">PULSEWAVE<span>.NL</span></div>
+        <div class="logo">
+            <h2>PULSEWAVE.NL</h2>
+        </div>
         <nav class="navigatie">
             <a href="index.html" class="actief">Home</a>
             
+           
             <div class="dropdown">
                 <button class="dropknop">Programma ▼</button>
                 <div class="dropdown-inhoud">
-                    <a href="lineup.html">Line-up 2027</a>
-                    <a href="tickets.html">VIP & Tickets</a>
+                    <a href="lineup.html">Line-up</a>
+                    <a href="timetable.html">Timetable</a>
                 </div>
             </div>
 
@@ -26,22 +29,33 @@
         </nav>
     </header>
 
+   
     <section class="hero">
         <p class="datum-badge">10 & 11 JULI 2027 • MAASVLAKTE STRAND</p>
         <h1>PULSEWAVE FESTIVAL</h1>
         <p class="slogan">Voel de bass, beleef de energie en dans tot de zon opkomt.</p>
         
+       
         <button id="aanwezigKnop" class="actie-knop" onclick="veranderKnop()">Ben je erbij?</button>
     </section>
 
+   
     <main class="container">
         <h2 class="sectie-titel">Ontdek PULSEWAVE 2027</h2>
         <div class="teaser-rij">
+            
             
             <div class="teaser-blok">
                 <h3>De Line-up</h3>
                 <p>Check de 6 beste DJ's en live-acts verdeeld over de Mainstage en de Wave Arena.</p>
                 <a href="lineup.html" class="teaser-link">Bekijk artiesten →</a>
+            </div>
+
+         
+            <div class="teaser-blok">
+                <h3>Timetable</h3>
+                <p>Zie precies hoe laat jouw favoriete artiest optreedt zodat je geen set mist.</p>
+                <a href="timetable.html" class="teaser-link">Bekijk tijdschema →</a>
             </div>
 
             <div class="teaser-blok">
@@ -53,10 +67,12 @@
         </div>
     </main>
 
+   
     <footer class="voettekst">
-        <p>&copy; 2027 PULSEWAVE Festival - Gemaakt door Rodi & Mohamed (Periode 1)</p>
+        <p>&copy; 2027 PULSEWAVE Festival - Gemaakt door [Rodi], [Mohamed] & [Zakaria] (Periode 1)</p>
     </footer>
 
+   
     <script>
         function veranderKnop() {
             document.getElementById("aanwezigKnop").innerHTML = "Ik ben aanwezig!";
