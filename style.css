@@ -308,4 +308,13 @@ h1, h2, h3, .logo h2 {
     .hero h1 {
         font-size: 32px;
     }
+    /* Tabel scrolt netjes op mobiel - Samen */
+    .tabel-wrapper {
+        overflow-x: auto;
+    }
+
+    /* Formulier even breed als het scherm - Mohamed */
+    .ticket-formulier {
+        width: 100%;
+    }
 }

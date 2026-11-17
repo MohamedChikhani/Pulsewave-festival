@@ -2,7 +2,7 @@
                  /           |            \
                 /            |             \
    [ 2. LINE-UP ]    [ 3. TIMETABLE ]    [ 4. TICKETS ]
-   (lineup.html)     (timetable.html)    (tickets.html)
+   (lineup.html)     (timetable.html)    (tickets.html)S
          \                   /
           \                 /
       (Zitten samen in Dropdown: "Programma ▼")
