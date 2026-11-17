@@ -1,6 +1,5 @@
-/* =========================================
-   GEZAMENLIJKE HUISSTIJL - Samen
-   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,16 +7,19 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #0d1b2a;
-    color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    background-color: #0D1B2A;
+    color: #F8F9FA;
     line-height: 1.6;
 }
 
-/* Header & Navigatie */
+h1, h2, h3, .logo h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
 .hoofdbalk {
-    background-color: #1b263b;
-    border-bottom: 3px solid #ff6b6b;
+    background-color: #1B263B;
+    border-bottom: 3px solid #FF6B6B;
     padding: 15px 40px;
     display: flex;
     justify-content: space-between;
@@ -27,15 +29,11 @@ body {
     z-index: 100;
 }
 
-.logo {
+.logo h2 {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: 700;
     letter-spacing: 2px;
-    color: #ffffff;
-}
-
-.logo span {
-    color: #ff6b6b;
+    color: #FFFFFF;
 }
 
 .navigatie {
@@ -45,10 +43,11 @@ body {
 }
 
 .navigatie a, .dropknop {
-    color: #ffffff;
+    color: #FFFFFF;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: 600;
     background: none;
     border: none;
     padding: 8px 14px;
@@ -57,11 +56,10 @@ body {
 }
 
 .navigatie a:hover, .dropknop:hover, .actief {
-    background-color: #ff6b6b;
-    color: #0d1b2a;
+    background-color: #FF6B6B;
+    color: #0D1B2A;
 }
 
-/* Dropdown in de nav */
 .dropdown {
     position: relative;
 }
@@ -71,8 +69,8 @@ body {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #1b263b;
-    border: 1px solid #ff6b6b;
+    background-color: #1B263B;
+    border: 1px solid #FF6B6B;
     min-width: 160px;
     border-radius: 5px;
 }
@@ -86,7 +84,6 @@ body {
     display: block;
 }
 
-/* Algemene container en knoppen */
 .container {
     width: 85%;
     max-width: 1100px;
@@ -95,18 +92,18 @@ body {
 
 .pagina-titel, .sectie-titel {
     font-size: 32px;
-    color: #ffe66d;
+    color: #FFE66D;
     margin-bottom: 10px;
 }
 
 .pagina-subtitel {
-    color: #cbd5e1;
+    color: #CBD5E1;
     margin-bottom: 30px;
 }
 
 .actie-knop {
-    background-color: #ff6b6b;
-    color: #0d1b2a;
+    background-color: #FF6B6B;
+    color: #0D1B2A;
     border: none;
     padding: 14px 28px;
     font-size: 18px;
@@ -116,37 +113,29 @@ body {
 }
 
 .actie-knop:hover {
-    background-color: #ffe66d;
-}
-
-.actie-knop.geklikt {
-    background-color: #4ecdc4;
-    color: #0d1b2a;
+    background-color: #FFE66D;
 }
 
 .voettekst {
-    background-color: #1b263b;
+    background-color: #1B263B;
     text-align: center;
     padding: 20px;
     margin-top: 60px;
-    border-top: 2px solid #415a77;
-    color: #cbd5e1;
+    border-top: 2px solid #4ECDC4;
+    color: #CBD5E1;
 }
 
-/* =========================================
-   HOMEPAGE (Hero & 3 Teasers) - Samen
-   ========================================= */
 .hero {
-    background: linear-gradient(135deg, #1b263b, #415a77);
+    background: linear-gradient(135deg, #1B263B, #415A77);
     text-align: center;
     padding: 80px 20px;
-    border-bottom: 3px solid #4ecdc4;
+    border-bottom: 3px solid #4ECDC4;
 }
 
 .datum-badge {
     display: inline-block;
-    background-color: #4ecdc4;
-    color: #0d1b2a;
+    background-color: #4ECDC4;
+    color: #0D1B2A;
     font-weight: bold;
     padding: 5px 15px;
     border-radius: 20px;
@@ -161,7 +150,7 @@ body {
 
 .slogan {
     font-size: 20px;
-    color: #ffe66d;
+    color: #FFE66D;
     margin-bottom: 30px;
 }
 
@@ -173,29 +162,27 @@ body {
 }
 
 .teaser-blok {
-    background-color: #1b263b;
-    border: 1px solid #415a77;
+    background-color: #1B263B;
+    border: 1px solid #415A77;
     border-radius: 8px;
     padding: 25px;
     width: 32%;
 }
 
 .teaser-blok h3 {
-    color: #4ecdc4;
+    color: #4ECDC4;
     margin-bottom: 10px;
 }
 
 .teaser-link {
     display: inline-block;
     margin-top: 15px;
-    color: #ff6b6b;
+    color: #FF6B6B;
     font-weight: bold;
     text-decoration: none;
 }
 
-/* =========================================
-   KAARTENPAGINA - Student A
-   ========================================= */
+/* Kaartenpagina - Rodi */
 .kaarten-grid {
     display: flex;
     flex-wrap: wrap;
@@ -203,8 +190,8 @@ body {
 }
 
 .kaart {
-    background-color: #1b263b;
-    border: 1px solid #415a77;
+    background-color: #1B263B;
+    border: 1px solid #415A77;
     border-radius: 8px;
     overflow: hidden;
     width: 31%;
@@ -223,8 +210,8 @@ body {
 
 .podium-label {
     display: inline-block;
-    background-color: #415a77;
-    color: #ffe66d;
+    background-color: #415A77;
+    color: #FFE66D;
     font-size: 12px;
     font-weight: bold;
     padding: 4px 10px;
@@ -232,38 +219,38 @@ body {
     margin-bottom: 10px;
 }
 
-/* =========================================
-   TABELPAGINA - Student B
-   ========================================= */
+
 .festival-tabel {
     width: 100%;
     border-collapse: collapse;
-    background-color: #1b263b;
+    background-color: #1B263B;
+
 }
 
 .festival-tabel thead {
-    background-color: #ff6b6b;
-    color: #0d1b2a;
+    background-color: #FF6B6B;
+    color: #0D1B2A;
 }
 
 .festival-tabel th, .festival-tabel td {
     padding: 15px;
     text-align: left;
-    border: 1px solid #415a77;
+    border: 1px solid #415A77;
 }
 
 .festival-tabel tbody tr:hover {
     background-color: #253552;
 }
+.festival-tabel tbody tr:nth-child(even) {
+    background-color: #152033;
+}
 
-/* =========================================
-   FORMULIERPAGINA - Student C
-   ========================================= */
+
 .ticket-formulier {
-    background-color: #1b263b;
+    background-color: #1B263B;
     padding: 30px;
     border-radius: 8px;
-    border: 1px solid #415a77;
+    border: 1px solid #415A77;
     max-width: 600px;
 }
 
@@ -275,16 +262,16 @@ body {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #4ecdc4;
+    color: #4ECDC4;
 }
 
 .form-groep input, .form-groep select {
     width: 100%;
     padding: 12px;
     border-radius: 5px;
-    border: 1px solid #415a77;
-    background-color: #0d1b2a;
-    color: #ffffff;
+    border: 1px solid #415A77;
+    background-color: #0D1B2A;
+    color: #FFFFFF;
     font-size: 16px;
 }
 
@@ -300,13 +287,10 @@ body {
 
 .checkbox-groep label {
     margin-bottom: 0;
-    color: #f8f9fa;
+    color: #F8F9FA;
     font-weight: normal;
 }
 
-/* =========================================
-   RESPONSIVE DESIGN (Telefoon <= 768px)
-   ========================================= */
 @media (max-width: 768px) {
     .hoofdbalk {
         flex-direction: column;
